@@ -1,0 +1,1 @@
+docker run -it --name test -v ./learn-1:/go golang:alpine /bin/sh 
