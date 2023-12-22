@@ -37,3 +37,11 @@ Hello, world!
 /go # 
 ```
 - The `-o` flags allow you to name the binary and locate your src code
+
+### Installint 3rd-party go codes
+
+- Example:
+
+`go install github.com/x/x`
+
+This will download x and all it's dependencies, build and install the binary into `$PATH/bin`. That's where your binary will stored.
