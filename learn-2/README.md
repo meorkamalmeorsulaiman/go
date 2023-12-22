@@ -34,7 +34,7 @@ x *= 2
 - Concate with `+`
 
 
-### var vs :=
+## var vs :=
 
 - The verbose god level `var x int = 10`
 - Cheap `var x = 10` which you can leave the type, and default or integer literal is `int`
@@ -54,3 +54,30 @@ var (
 - Go short declaration format `var x = 10` is equal to `x := 10`
 - Declaring multi-var `x, y := 10, "hi"`
 - Use `:=` withing function, use `var` when declaring zero values
+
+## const - Immutable
+
+```go
+const x int64 = 10
+
+const (
+    idToken = "id"
+    nameToken = "name"
+)
+
+const z = 20 * 10
+
+func main () {
+    const y = "Hi!"
+    fmt.Println(x)
+    fmt.Println(y)
+
+    x = x +1
+    y = "bye"
+
+    fmt.Println(x)
+    fmt.Println(y)
+}
+```
+
+- Code will failed where `x` and `y` couldn't be assign
